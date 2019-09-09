@@ -47,14 +47,12 @@ a[href*=".html"] {
 /* Select only the links in the top most list and give them background color `palegreen`*/
 .menu-tree > li > a {
   background-color: palegreen;
- {
-  
 }
 
 /* Select 2nd, 3rd and 4th and 7th item in the TODO list and set them as done (with a line through).*/
-
-ol > li:nth-child(2) {
-  /* text-decoration: line-through; */
+.grocery li:nth-child(2),
+.grocery li:nth-child(3),
+.grocery li:nth-child(4),
+.grocery li:nth-child(7) {
   color: red;
 }
-
