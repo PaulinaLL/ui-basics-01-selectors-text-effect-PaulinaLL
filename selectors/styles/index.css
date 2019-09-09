@@ -54,5 +54,5 @@ a[href*=".html"] {
 .grocery li:nth-child(3),
 .grocery li:nth-child(4),
 .grocery li:nth-child(7) {
-  color: red;
+  text-decoration: line-through;
 }
