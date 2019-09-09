@@ -7,5 +7,54 @@ main {
 }
 
 img {
-  max-width: 60%;
+  max-width: 40%;
 }
+
+/* Select all the images without `alt` attribute and
+give them a pink border with `2px` thickness */
+
+img[alt=""] {
+  border: 2px solid pink;
+}
+
+/* Select all links that lead to an external resource and
+make them bold, dotted underline and `rebeccapurple` color*/
+
+a[href*='//'] {
+  font-weight: bold;
+  text-decoration-style: dotted;
+  color: rebeccapurple;
+}
+
+/* Select all links that are internal and make them bold and `orange`*/
+
+a[href*=".html"] {
+  font-weight: bold;
+  color: orange;
+}
+
+/* Make nested lists to get smaller in size compared to their immediate parent */
+
+.menu-tree li ul li {
+  font-size: 0.75em;
+}
+
+/*.menu-tree ul {
+  font-size: 0.75em;
+}  - WRONG 
+*/
+
+/* Select only the links in the top most list and give them background color `palegreen`*/
+.menu-tree > li > a {
+  background-color: palegreen;
+ {
+  
+}
+
+/* Select 2nd, 3rd and 4th and 7th item in the TODO list and set them as done (with a line through).*/
+
+ol > li:nth-child(2) {
+  /* text-decoration: line-through; */
+  color: red;
+}
+
